@@ -1,3 +1,4 @@
+
 # a =10
 # print(id(a),a)
 
@@ -33,7 +34,7 @@
 #         print(i, "--->", l[i])
         
         
-name =["viru","ujwal","gabbar","niraj"]
+name =["viru","jay","gabbar","basanti"]
 # print(name[len(name)-1])
 # for i in name:
 #     if(i=="gabbar"):
@@ -44,7 +45,25 @@ name =["viru","ujwal","gabbar","niraj"]
 # print(a[::-1])
 
 count =0
+# for i in range(len(name)):
+#     if(len(name[i]) > 4):
+#         count +=1
+#         print(i,name[i])
+# sub ="i"
+# chotulist = []
+# for i in range(len(name)):
+#     for j in name[i]:
+#         if(j == "i"):
+#             chotulist.append(name[i])
+# print(chotulist)
+
+motulist = []
+# for i in name:
+#     motulist.append(i.upper())
+# print(motulist)
+
 for i in range(len(name)):
-    if(len(name[i]) > 4):
-        count +=1
-        print(i,name[i])
+    for j in name[i]:
+        if(j == "a"):
+            count +=1
+print(count)
