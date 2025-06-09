@@ -1,0 +1,28 @@
+
+# OUTPUT
+
+# Input as index(9) for pop function 
+# original List -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'yadnyesh', 'sawant', 'tka']
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 'yadnyesh', 'sawant', 'tka']
+----------------------------------------------------------------------------------------------------
+# Input as value("yadnyesh") for remove function
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 'sawant', 'tka']
+----------------------------------------------------------------------------------------------------
+# Input as value("yadnyesh) for pop method
+# Traceback (most recent call last):
+#   File "d:\python csr\PythonCourseTKA\HomeWork\homework4.py", line 28, in <module>
+#     l.pop("yadnyesh")
+# TypeError: 'str' object cannot be interpreted as an integer
+----------------------------------------------------------------------------------------------------
+# Input as value("yadnyesh) for pop method
+# Traceback (most recent call last):
+#   File "d:\python csr\PythonCourseTKA\HomeWork\homework4.py", line 28, in <module>
+#     l.pop("yadnyesh")
+# TypeError: 'str' object cannot be interpreted as an integer
+-----------------------------------------------------------------------------------------------------
+# Input as index(0) for remove method
+# Traceback (most recent call last):
+#   File "d:\python csr\PythonCourseTKA\HomeWork\homework4.py", line 41, in <module>
+#     l.remove(0)
+# ValueError: list.remove(x): x not in list
+-------------------------------------------------------------------------------------------------------
