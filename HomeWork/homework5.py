@@ -5,7 +5,6 @@ count = 0
 movie = []
 year = []
 for k,v in moviesDb.moviesData.items():
-    # print(k,v,"\n")
     for k1,v1 in v.items():
         for actor in v1:
             if actor == actorName:
