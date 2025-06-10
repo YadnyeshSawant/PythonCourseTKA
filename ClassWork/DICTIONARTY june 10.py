@@ -13,3 +13,6 @@ for data in movies.values():
     for cast in data:
         if cast == "AB":
             print(cast)
+            
+for k,v in movies.items():
+    print(k,v)    
