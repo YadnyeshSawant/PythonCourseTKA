@@ -12,7 +12,7 @@ for k,v in moviesDb.moviesData.items():
                 movie.append(k1)
                 year.append(k)
                 
-print("----"*10)
+print("--------------")
 
 print("Actor Name =", actorName)
 for i in range(0,count):
@@ -21,7 +21,7 @@ for i in range(0,count):
 # print("Name of Movie =",movie)
 print("Number of the time stared in movie = ", count)
 
-print("----"*10)
+print("--------------")
 
 ###################################################
 # OUTPUT
