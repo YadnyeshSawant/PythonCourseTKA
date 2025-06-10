@@ -23,3 +23,13 @@ for i in range(0,count):
 print("Number of the time stared in movie = ", count)
 
 print("----"*10)
+
+###################################################
+# OUTPUT
+# Enter the name of the Actor  Akshay Kumar
+# ----------------------------------------
+# Actor Name = Akshay Kumar
+# Movie Name = Atrangi Re (2021)
+# Movie Name = Bachchhan Paandey (2022)
+# Number of the time stared in movie =  2
+# ----------------------------------------
