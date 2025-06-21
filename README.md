@@ -1,2 +1,2 @@
 # PythonCourseTKA
-Course Files 
+Course Files and homeworks for submission
