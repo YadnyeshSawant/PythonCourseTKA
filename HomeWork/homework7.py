@@ -1,26 +1,32 @@
-# Hw Task 2: An Employee has name, salary and phone. Phone means mobile number, email address. employee has one operation which displays salary and email and name of employee. 
+# Hw Task 2: An Employee has name, salary and phone. Phone means mobile number, email address. employee has one operation which displays salary and email and name of employee.
+
 
 class Employee:
-    name ="Yadnyesh Sawant"
+    name = "Yadnyesh Sawant"
     salary = 120000
-    phone = {"mobileNumber": 8576940375, "email":"yadnyesh2022@gmil.com"}
-    
+    phone = {"mobileNumber": 8576940375, "email": "yadnyesh2022@gmil.com"}
+
     def displayInfo(*args):
         print("Employee Details")
+
         if "name" in args:
             print(f"Employee Name: {Employee.name}")
-            
+
         if "salary" in args:
             print(f"Employee Salary: {Employee.salary}")
-            
+
         if "phone" in args:
-            print(f"Employee Phone: {Employee.phone}")
-            
-        if not args:
+            # print(f"Employee Phone: {Employee.phone}")
+            for k, v in Employee.phone.items():
+                print(f"{k} : {v}")
+                
+        else:
             print(f"Employee Name: {Employee.name}")
             print(f"Employee Salary: {Employee.salary}")
-            print(f"Employee Phone: {Employee.phone}")
-            # print(f"Employee Email Address: {Employee.email}")
+            # print(f"Employee Phone:{Employee.phone}")
+            for k, v in Employee.phone.items():
+                print(f"{k} : {v}")
+
 
 emp = Employee()
 print("If argumaents passed")
@@ -30,6 +36,7 @@ emp.displayInfo("phone")
 
 print("\nIf argument not passed")
 emp.displayInfo()
+
 ##################################################################
 
 # OUTPUT
@@ -42,12 +49,15 @@ emp.displayInfo()
 # Employee Salary: 120000
 
 # Employee Details
-# Employee Phone: {'mobileNumber': 8576940375, 'email': 'yadnyesh2022@gmil.com'}
+# mobileNumber : 8576940375
+# email : yadnyesh2022@gmil.com
 
 # If argument not passed
+
 # Employee Details
 # Employee Name: Yadnyesh Sawant
 # Employee Salary: 120000
-# Employee Phone: {'mobileNumber': 8576940375, 'email': 'yadnyesh2022@gmil.com'}
+# mobileNumber : 8576940375
+# email : yadnyesh2022@gmil.com
 
 #################################################################
