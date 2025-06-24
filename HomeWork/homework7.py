@@ -43,13 +43,12 @@ Employee.displayInfo()
 # Employee Salary: 120000
 
 # Employee Details
-# Employee Email Address: yadnyesh2022@gmil.com
+# Employee Phone: {'mobileNumber': 8576940375, 'email': 'yadnyesh2022@gmil.com'}
 
 # If argument not passed
 # Employee Details
 # Employee Name: Yadnyesh Sawant
 # Employee Salary: 120000
-# Employee Mobile Number: 8576940375
-# Employee Email Address: yadnyesh2022@gmil.com
+# Employee Phone: {'mobileNumber': 8576940375, 'email': 'yadnyesh2022@gmil.com'}
 
 #################################################################
