@@ -13,11 +13,8 @@ class Employee:
         if "salary" in args:
             print(f"Employee Salary: {Employee.salary}")
             
-        if "mobileNumber" in args:
-            print(f"Employee Mobile Number: {Employee.mobileNumber}")
-            
-        if "email" in args:
-            print(f"Employee Email Address: {Employee.email}")
+        if "phone" in args:
+            print(f"Employee Phone: {Employee.phone}")
             
         if not args:
             print(f"Employee Name: {Employee.name}")
