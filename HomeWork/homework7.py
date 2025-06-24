@@ -3,8 +3,7 @@
 class Employee:
     name ="Yadnyesh Sawant"
     salary = 120000
-    mobileNumber = 8576940375
-    email ="yadnyesh2022@gmil.com"
+    phone = {"mobileNumber": 8576940375, "email":"yadnyesh2022@gmil.com"}
     
     def displayInfo(*args):
         print("Employee Details")
@@ -23,14 +22,14 @@ class Employee:
         if not args:
             print(f"Employee Name: {Employee.name}")
             print(f"Employee Salary: {Employee.salary}")
-            print(f"Employee Mobile Number: {Employee.mobileNumber}")
-            print(f"Employee Email Address: {Employee.email}")
+            print(f"Employee Phone: {Employee.phone}")
+            # print(f"Employee Email Address: {Employee.email}")
 
 
 print("If argumaents passed")
 Employee.displayInfo("name")
 Employee.displayInfo("salary")
-Employee.displayInfo("email")
+Employee.displayInfo("phone")
 
 print("\nIf argument not passed")
 Employee.displayInfo()
