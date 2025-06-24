@@ -22,15 +22,14 @@ class Employee:
             print(f"Employee Phone: {Employee.phone}")
             # print(f"Employee Email Address: {Employee.email}")
 
-
+emp = Employee()
 print("If argumaents passed")
-Employee.displayInfo("name")
-Employee.displayInfo("salary")
-Employee.displayInfo("phone")
+emp.displayInfo("name")
+emp.displayInfo("salary")
+emp.displayInfo("phone")
 
 print("\nIf argument not passed")
-Employee.displayInfo()
-
+emp.displayInfo()
 ##################################################################
 
 # OUTPUT
