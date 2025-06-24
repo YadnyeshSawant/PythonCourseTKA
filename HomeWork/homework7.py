@@ -11,7 +11,7 @@ class Employee:
 
         if "name" in args:
             print(f"Employee Name: {Employee.name}")
-
+        
         if "salary" in args:
             print(f"Employee Salary: {Employee.salary}")
 
