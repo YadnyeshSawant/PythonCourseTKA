@@ -22,6 +22,7 @@ subtract(3, 4)  # function call
 decorated(3, 4)  # function call for Decorator Without @ Syntax
 
 
+
 ###############################################################
 # CONCLUSION:-
 # The subtract function prints the result of subtracting b from a, but when decorated with @subModified, it ensures the larger number is always subtracted from to avoid negative results
