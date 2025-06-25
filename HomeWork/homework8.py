@@ -9,11 +9,16 @@ class Student:
         self.name = name
         self.roll = roll
         self.subjectMarks = marks
-        self.marksObatined = sum(self.subjectMarks.values())
-        self.numberOfSubject = len(self.subjectMarks) * 100
-        self.percentage = (self.marksObatined / self.numberOfSubject) * 100
 
     def display(self):
+        
+        self.marksObatined = 0
+        for v in self.subjectMarks.values():
+            self.marksObatined += v
+            
+        self.numberOfSubject = len(self.subjectMarks) * 100
+        self.percentage = (self.marksObatined / self.numberOfSubject) * 100
+        
         print(f"\nName of Student{self.name:>28}")
         print("Subject-wise Marks:")
 
