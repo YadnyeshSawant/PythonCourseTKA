@@ -16,8 +16,8 @@ class Student:
         for v in self.subjectMarks.values():
             self.marksObatined += v
 
-        self.numberOfSubject = len(self.subjectMarks) * 100
-        self.percentage = (self.marksObatined / self.numberOfSubject) * 100
+        self.totalMarks = len(self.subjectMarks) * 100
+        self.percentage = (self.marksObatined / self.totalMarks) * 100
 
         print(f"\nName of Student{self.name:>28}")
         print("Subject-wise Marks:")
