@@ -14,14 +14,16 @@ class Student:
         self.percentage = (self.marksObatined / self.numberOfSubject) * 100
 
     def display(self):
-        print(f"Name of Student              {self.name}")
+        print(f"\nName of Student{self.name:>28}")
         print("Subject-wise Marks:")
 
         for subject, mark in self.subjectMarks.items():
-            print(f"  {subject:<25}  {mark}")
-        print(f"Total Marks Obtained by      {self.marksObatined}")
-        print(f"Percentage Obatained         {self.percentage:.2f}%")
-        print("---" * 20)
+            print(f"  {subject:<25}   {mark:>10} ")
+        
+        print(f"Total Marks Obtained by{self.marksObatined:>18}")
+        print(f"Percentage Obatained{self.percentage:>23.2f}")
+        print()
+        print("=" * 42)
 
 students = []
 
@@ -39,3 +41,54 @@ students.append(Student("Shree", 101, stud4))
 
 for s in students:
     s.display()
+    
+#############################################################
+# OUTPUT
+
+# Name of Student                    Yadnyesh
+# Subject-wise Marks:
+#   Math                                85 
+#   Science                             78 
+#   English                             92 
+#   History                             74 
+#   Computer                            88 
+# Total Marks Obtained by               417
+# Percentage Obatained                  83.40
+
+# ==========================================
+
+# Name of Student                       Ujwal
+# Subject-wise Marks:
+#   Math                                67 
+#   Science                             56 
+#   English                             34 
+#   History                             68 
+#   Computer                            90 
+# Total Marks Obtained by               315
+# Percentage Obatained                  63.00
+
+# ==========================================
+
+# Name of Student                      Shruti
+# Subject-wise Marks:
+#   Math                                76
+#   Science                             39
+#   English                             34
+#   History                             67
+#   Computer                            89
+# Total Marks Obtained by               305
+# Percentage Obatained                  61.00
+
+# ==========================================
+
+# Name of Student                       Shree
+# Subject-wise Marks:
+#   Math                                68
+#   Science                             23
+#   English                             43
+#   History                             45
+#   Computer                            97
+# Total Marks Obtained by               276
+# Percentage Obatained                  55.20
+
+# ==========================================
