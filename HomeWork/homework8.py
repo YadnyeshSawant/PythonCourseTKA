@@ -11,24 +11,25 @@ class Student:
         self.subjectMarks = marks
 
     def display(self):
-        
+
         self.marksObatined = 0
         for v in self.subjectMarks.values():
             self.marksObatined += v
-            
+
         self.numberOfSubject = len(self.subjectMarks) * 100
         self.percentage = (self.marksObatined / self.numberOfSubject) * 100
-        
+
         print(f"\nName of Student{self.name:>28}")
         print("Subject-wise Marks:")
 
         for subject, mark in self.subjectMarks.items():
             print(f"  {subject:<25}   {mark:>10} ")
-        
+
         print(f"Total Marks Obtained by{self.marksObatined:>18}")
         print(f"Percentage Obatained{self.percentage:>23.2f}")
         print()
         print("=" * 42)
+
 
 students = []
 
@@ -46,17 +47,17 @@ students.append(Student("Shree", 101, stud4))
 
 for s in students:
     s.display()
-    
+
 #############################################################
 # OUTPUT
 
 # Name of Student                    Yadnyesh
 # Subject-wise Marks:
-#   Math                                85 
-#   Science                             78 
-#   English                             92 
-#   History                             74 
-#   Computer                            88 
+#   Math                                85
+#   Science                             78
+#   English                             92
+#   History                             74
+#   Computer                            88
 # Total Marks Obtained by               417
 # Percentage Obatained                  83.40
 
@@ -64,11 +65,11 @@ for s in students:
 
 # Name of Student                       Ujwal
 # Subject-wise Marks:
-#   Math                                67 
-#   Science                             56 
-#   English                             34 
-#   History                             68 
-#   Computer                            90 
+#   Math                                67
+#   Science                             56
+#   English                             34
+#   History                             68
+#   Computer                            90
 # Total Marks Obtained by               315
 # Percentage Obatained                  63.00
 
