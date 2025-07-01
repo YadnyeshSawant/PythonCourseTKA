@@ -1,42 +1,97 @@
+class Player:
+
+    def __init__(self, j, n, rs, w, t, p):
+        self.__jerseyNo = j
+        self.__name = n
+        self.__runsScored = rs
+        self.__wickets = w
+        self.__team = t
+        self.__pin = p
+
+    def get_jerseyNo(self):
+        if self.__pin == 1234:
+            return self.__jerseyNo
+        else:
+            print("INVALID PIN")
+
+    def set_jerseyNo(self, j):
+        self.__jerseyNo = j
+
+    def get_name(self):
+        if self.__pin == 1234:
+            return self.__name
+        else:
+            print("INVALID PIN")
+
+    def set_name(self, n):
+        self.__name = n
+
+    def get_runsScored(self):
+        if self.__pin == 1234:
+            return self.__runsScored
+        else:
+            print("INVALID PIN")
+
+    def set_runsScored(self, rs):
+        self.__runsScored = rs
+
+    def get_wickets(self):
+        if self.__pin == 1234:
+            return self.__wickets
+        else:
+            print("INVALID PIN")
+
+    def set_wickets(self, w):
+        self.__wickets = w
+
+    def get_team(self):
+        if self.__pin == 1234:
+            return self.__team
+        else:
+            print("INVALID PIN")
+
+    def set_team(self, t):
+        self.__team = t
+
 miTeam = []
 rcbTeam = []
 cskTeam = []
 
-p1 = Player(45, "Rohit Sharma", 6211, 27, "MI")
-p2 = Player(63, "Ishan Kishan", 2328, 34, "MI")
-p3 = Player(93, "Suryakumar Yadav", 3248, 58, "MI")
-p4 = Player(33, "Hardik Pandya", 1535, 53, "MI")
-p5 = Player(99, "Jasprit Bumrah", 68, 154, "MI")
-p6 = Player(77, "Tilak Varma", 925, 46, "MI")
-p7 = Player(55, "Tim David", 872, 21, "MI")
-p8 = Player(19, "Gerald Coetzee", 40, 17, "MI")
-p9 = Player(90, "Piyush Chawla", 599, 179, "MI")
-p10 = Player(11, "Akash Madhwal", 20, 15, "MI")
-p11 = Player(27, "Nehal Wadhera", 241, 13, "MI")
+p1 = Player(45, "Rohit Sharma", 6211, 27, "MI", 1234)
+p2 = Player(63, "Ishan Kishan", 2328, 34, "MI", 1234)
+p3 = Player(93, "Suryakumar Yadav", 3248, 58, "MI", 1234)
+p4 = Player(33, "Hardik Pandya", 1535, 53, "MI", 1234)
+p5 = Player(99, "Jasprit Bumrah", 68, 154, "MI", 1234)
+p6 = Player(77, "Tilak Varma", 925, 46, "MI", 1234)
+p7 = Player(55, "Tim David", 872, 21, "MI", 1234)
+p8 = Player(19, "Gerald Coetzee", 40, 17, "MI", 1234)
+p9 = Player(90, "Piyush Chawla", 599, 179, "MI", 1234)
+p10 = Player(11, "Akash Madhwal", 20, 15, "MI", 1234)
+p11 = Player(27, "Nehal Wadhera", 241, 13, "MI", 1234)
 
-p12 = Player(7, "MS Dhoni", 5243, 25, "CSK")
-p13 = Player(9, "Ruturaj Gaikwad", 1797, 33, "CSK")
-p14 = Player(8, "Ravindra Jadeja", 2692, 152, "CSK")
-p15 = Player(33, "Shivam Dube", 1521, 4, "CSK")
-p16 = Player(90, "Matheesha Pathirana", 20, 35, "CSK")
-p17 = Player(99, "Deepak Chahar", 79, 73, "CSK")
-p18 = Player(5, "Moeen Ali", 1130, 33, "CSK")
-p19 = Player(19, "Tushar Deshpande", 12, 32, "CSK")
-p20 = Player(20, "Maheesh Theekshana", 25, 36, "CSK")
-p21 = Player(44, "Ajinkya Rahane", 4433, 19, "CSK")
-p22 = Player(21, "Ben Stokes", 935, 28, "CSK")
+p12 = Player(7, "MS Dhoni", 5243, 25, "CSK", 1234)
+p13 = Player(9, "Ruturaj Gaikwad", 1797, 33, "CSK", 1234)
+p14 = Player(8, "Ravindra Jadeja", 2692, 152, "CSK", 1234)
+p15 = Player(33, "Shivam Dube", 1521, 4, "CSK", 1234)
+p16 = Player(90, "Matheesha Pathirana", 20, 35, "CSK", 1234)
+p17 = Player(99, "Deepak Chahar", 79, 73, "CSK", 1234)
+p18 = Player(5, "Moeen Ali", 1130, 33, "CSK", 1234)
+p19 = Player(19, "Tushar Deshpande", 12, 32, "CSK", 1234)
+p20 = Player(20, "Maheesh Theekshana", 25, 36, "CSK", 1234)
+p21 = Player(44, "Ajinkya Rahane", 4433, 19, "CSK", 1234)
+p22 = Player(21, "Ben Stokes", 935, 28, "CSK", 1234)
 
-p23 = Player(18, "Virat Kohli", 7900, 5, "RCB")
-p24 = Player(97, "Faf du Plessis", 4500, 36, "RCB")
-p25 = Player(5, "Glenn Maxwell", 2800, 34, "RCB")
-p26 = Player(19, "Dinesh Karthik", 4516, 42, "RCB")
-p27 = Player(10, "Mohammed Siraj", 42, 78, "RCB")
-p28 = Player(6, "Cameron Green", 500, 12, "RCB")
-p29 = Player(15, "Rajat Patidar", 861, 22, "RCB")
-p30 = Player(70, "Karn Sharma", 245, 69, "RCB")
-p31 = Player(31, "Yash Dayal", 15, 21, "RCB")
-p32 = Player(13, "Anuj Rawat", 393, 17, "RCB")
-p33 = Player(54, "Mayank Dagar", 72, 13, "RCB")
+p23 = Player(18, "Virat Kohli", 7900, 5, "RCB", 1234)
+p24 = Player(97, "Faf du Plessis", 4500, 36, "RCB", 1234)
+p25 = Player(5, "Glenn Maxwell", 2800, 34, "RCB", 1234)
+p26 = Player(19, "Dinesh Karthik", 4516, 42, "RCB", 1234)
+p27 = Player(10, "Mohammed Siraj", 42, 78, "RCB", 1234)
+p28 = Player(6, "Cameron Green", 500, 12, "RCB", 1234)
+p29 = Player(15, "Rajat Patidar", 861, 22, "RCB", 1234)
+p30 = Player(70, "Karn Sharma", 245, 69, "RCB", 1234)
+p31 = Player(31, "Yash Dayal", 15, 21, "RCB", 1234)
+p32 = Player(13, "Anuj Rawat", 393, 17, "RCB", 1234)
+p33 = Player(54, "Mayank Dagar", 72, 13, "RCB", 1234)
 
 
 miTeam.append(p1)
