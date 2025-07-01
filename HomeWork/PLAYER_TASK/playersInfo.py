@@ -100,7 +100,7 @@ def getBatsman(team):
 
 def getBolwer(team):
     for p in range(len(team)):
-        if team[p].get_wickets() > 20:
+        if team[p].get_wickets() > 30:
             displayInfo(team[p])
 
 
