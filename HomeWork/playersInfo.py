@@ -53,6 +53,62 @@ class Player:
     def set_team(self, t):
         self.__team = t
 
+def getBatsman(team):
+    for p in range(len(team)):
+        if team[p].get_runsScored() > 1000:
+            print(f"{'TEAM NAME:':<15} {team[p].get_team()}")
+            print(f"{'JERSEY NO:':<15} {team[p].get_jerseyNo()}")
+            print(f"{'PLAYER NAME:':<15} {team[p].get_name()}")
+            print(f"{'RUNS SCORED:':<15} {team[p].get_runsScored()}")
+            print(f"{'WICKETS:':<15} {team[p].get_wickets()}")
+            print("-" * 40)
+
+
+def getBolwer(team):
+    for p in range(len(team)):
+        if team[p].get_wickets() > 20:
+            print(f"{'TEAM NAME:':<15} {team[p].get_team()}")
+            print(f"{'JERSEY NO:':<15} {team[p].get_jerseyNo()}")
+            print(f"{'PLAYER NAME:':<15} {team[p].get_name()}")
+            print(f"{'RUNS SCORED:':<15} {team[p].get_runsScored()}")
+            print(f"{'WICKETS:':<15} {team[p].get_wickets()}")
+            print("-" * 40)
+
+
+def getAllRounders(team):
+    for p in range(len(team)):
+        if team[p].get_wickets() > 20 and team[p].get_runsScored() > 1000:
+            print(f"{'TEAM NAME:':<15} {team[p].get_team()}")
+            print(f"{'JERSEY NO:':<15} {team[p].get_jerseyNo()}")
+            print(f"{'PLAYER NAME:':<15} {team[p].get_name()}")
+            print(f"{'RUNS SCORED:':<15} {team[p].get_runsScored()}")
+            print(f"{'WICKETS:':<15} {team[p].get_wickets()}")
+            print("-" * 40)
+
+
+def playerDetails(player):
+    print(f"{'TEAM NAME:':<15} {player.get_team()}")
+    print(f"{'JERSEY NO:':<15} {player.get_jerseyNo()}")
+    print(f"{'PLAYER NAME:':<15} {player.get_name()}")
+    print(f"{'RUNS SCORED:':<15} {player.get_runsScored()}")
+    print(f"{'WICKETS:':<15} {player.get_wickets()}")
+    print("-" * 40)
+
+
+def getTeamDetails(team):
+    count = 1
+    for p in range(len(team)):
+        print(f"{'TEAM NAME:':<15} {team[p].get_team()}")
+        print(f"{'PLAYER NO:':<15} {count}")
+        print(f"{'JERSEY NO:':<15} {team[p].get_jerseyNo()}")
+        print(f"{'PLAYER NAME:':<15} {team[p].get_name()}")
+        print(f"{'RUNS SCORED:':<15} {team[p].get_runsScored()}")
+        print(f"{'WICKETS:':<15} {team[p].get_wickets()}")
+        print("-" * 40)
+        count += 1
+
+
+
 miTeam = []
 rcbTeam = []
 cskTeam = []
