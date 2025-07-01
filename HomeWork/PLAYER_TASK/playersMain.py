@@ -1,10 +1,7 @@
 import playersInfo as pi 
-option = 0
-
-def menu():
+def mainMenu():
     tname = ""
-    response = "y"
-    global option
+    option = 0
     while option !=6:
         print("-" * 40)
         print("OPTION 1: GET ALL BATSMAN ")
@@ -13,7 +10,7 @@ def menu():
         print("OPTION 4: GET ALLROUNDERS ")
         print("OPTION 5: GET PLAYER DETAILS ")
 
-        option = int(input("ENTER YOUR CHOICE\t"))
+        option = int(input("ENTER YOUR CHOICE \t"))
         print("-" * 40)
         if option == 1:
             tname = pi.setTeam()
@@ -38,5 +35,5 @@ def menu():
         elif option == 6:
             break
     
-
-menu()
+    
+mainMenu()
